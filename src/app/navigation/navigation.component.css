@@ -1,0 +1,33 @@
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ /*Navigation link styles*/
+.nav-links {
+
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ /*Hover effect for navigation links*/ 
+.nav-link:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.navbar-title {
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
