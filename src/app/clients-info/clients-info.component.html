@@ -1,0 +1,41 @@
+<!--<p>clients-info works!</p>-->
+
+<div class="container mt-4">
+  <h1>Client Listing</h1>
+  <br />
+  <table class="table table-bordered table-striped" style="width: 100%;">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">IC/Passport</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Gender</th>
+        <!--<th scope="col">Birth Date</th>-->
+        <!--<th scope="col">Address</th>-->
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let client of clients">
+        <tr scope="row">
+          <td>{{ client?.id }}</td>
+          <td>{{ client?.clientName }}</td>
+          <td>{{ client?.clientIcPassport }}</td>
+          <td>{{ client?.clientPhoneNumber }}</td>
+          <td>{{ client?.clientEmail }}</td>
+          <td>{{ client?.clientGender }}</td>
+          <!--<td>{{ client?.clientBirthDate | date: 'dd/MM/yyyy' }}</td>-->
+          <!--<td>{{ client?.clientAddress }}</td>-->
+          <td>
+            <!-- Example buttons or links for actions -->
+            <button class="btn btn-info btn-sm">Edit</button>
+            <button  class="btn btn-danger btn-sm">Delete</button>
+            <button class="btn btn-warning btn-sm">Book Now</button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
